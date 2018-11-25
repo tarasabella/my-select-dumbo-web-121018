@@ -1,4 +1,3 @@
-
 def my_select(nums)
   i = 0
   new_collection = []
@@ -6,6 +5,6 @@ def my_select(nums)
     new_collection << yield(nums[i])
     i += 1
   end
-  new_collection.select do |num| num.even?
+  nums.select do |num| num.even?
 end 
   end 
