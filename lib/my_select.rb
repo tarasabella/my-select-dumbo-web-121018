@@ -1,3 +1,11 @@
-def my_select(collection)
- # your code here!
-end
+
+def my_select(nums)
+  i = 0
+  new_collection = []
+  while i < nums.length
+    new_collection << yield(nums[i])
+    i += 1
+  end
+  new_collection.select do |num| num.even?
+end 
+  end 
