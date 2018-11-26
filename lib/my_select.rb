@@ -4,6 +4,5 @@ new_collection = []
 new_collection << yield(collection.select[i])
 i += 1 
 end 
-end 
 new_collection
 end
